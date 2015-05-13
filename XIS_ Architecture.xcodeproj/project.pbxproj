@@ -9,11 +9,26 @@
 /* Begin PBXBuildFile section */
 		680902061B02EFF600EDD4F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680902051B02EFF600EDD4F8 /* AppDelegate.swift */; };
 		680902091B02EFF600EDD4F8 /* XIS__Architecture.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 680902071B02EFF600EDD4F8 /* XIS__Architecture.xcdatamodeld */; };
-		6809020B1B02EFF600EDD4F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6809020A1B02EFF600EDD4F8 /* ViewController.swift */; };
-		6809020E1B02EFF600EDD4F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6809020C1B02EFF600EDD4F8 /* Main.storyboard */; };
 		680902101B02EFF600EDD4F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6809020F1B02EFF600EDD4F8 /* Images.xcassets */; };
 		680902131B02EFF600EDD4F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680902111B02EFF600EDD4F8 /* LaunchScreen.xib */; };
 		6809021F1B02EFF600EDD4F8 /* XIS__ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6809021E1B02EFF600EDD4F8 /* XIS__ArchitectureTests.swift */; };
+		680902391B02F03B00EDD4F8 /* XISAdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6809022F1B02F03B00EDD4F8 /* XISAdvancedViewController.m */; };
+		6809023A1B02F03B00EDD4F8 /* XISBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 680902311B02F03B00EDD4F8 /* XISBaseViewController.m */; };
+		6809023B1B02F03B00EDD4F8 /* XISMiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 680902331B02F03B00EDD4F8 /* XISMiddleViewController.m */; };
+		6809023C1B02F03B00EDD4F8 /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680902341B02F03B00EDD4F8 /* ReadMe.swift */; };
+		680902431B02F05A00EDD4F8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6809023E1B02F05A00EDD4F8 /* MenuViewController.swift */; };
+		680902441B02F05A00EDD4F8 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6809023F1B02F05A00EDD4F8 /* MyAccountViewController.swift */; };
+		680902451B02F05A00EDD4F8 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680902401B02F05A00EDD4F8 /* MyViewController.swift */; };
+		680902461B02F05A00EDD4F8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680902411B02F05A00EDD4F8 /* SettingViewController.swift */; };
+		680902471B02F05A00EDD4F8 /* WinningInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680902421B02F05A00EDD4F8 /* WinningInformationViewController.swift */; };
+		681F86031B02F375003F122D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681F86021B02F375003F122D /* Main.storyboard */; };
+		68A4854D1B033F7F0053C9A0 /* BreakHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A485441B033F7F0053C9A0 /* BreakHTTP.m */; };
+		68A4854E1B033F7F0053C9A0 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A485461B033F7F0053C9A0 /* HTTPRequest.m */; };
+		68A485501B033F7F0053C9A0 /* MBOURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4854A1B033F7F0053C9A0 /* MBOURLConnection.m */; };
+		68A485511B033F7F0053C9A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4854C1B033F7F0053C9A0 /* Reachability.m */; };
+		68A485551B0340120053C9A0 /* MBOBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A485541B0340120053C9A0 /* MBOBaseModel.m */; };
+		68A4855B1B0341300053C9A0 /* XISBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4855A1B0341300053C9A0 /* XISBaseView.m */; };
+		68A4855E1B0341390053C9A0 /* ShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4855D1B0341390053C9A0 /* ShowAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +46,40 @@
 		680902041B02EFF600EDD4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		680902051B02EFF600EDD4F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		680902081B02EFF600EDD4F8 /* XIS__Architecture.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XIS__Architecture.xcdatamodel; sourceTree = "<group>"; };
-		6809020A1B02EFF600EDD4F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6809020D1B02EFF600EDD4F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6809020F1B02EFF600EDD4F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		680902121B02EFF600EDD4F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		680902181B02EFF600EDD4F8 /* XIS_ ArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "XIS_ ArchitectureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6809021D1B02EFF600EDD4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6809021E1B02EFF600EDD4F8 /* XIS__ArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIS__ArchitectureTests.swift; sourceTree = "<group>"; };
+		680902281B02F02400EDD4F8 /* XIS_ Architecture-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XIS_ Architecture-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		6809022E1B02F03B00EDD4F8 /* XISAdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISAdvancedViewController.h; sourceTree = "<group>"; };
+		6809022F1B02F03B00EDD4F8 /* XISAdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISAdvancedViewController.m; sourceTree = "<group>"; };
+		680902301B02F03B00EDD4F8 /* XISBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISBaseViewController.h; sourceTree = "<group>"; };
+		680902311B02F03B00EDD4F8 /* XISBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISBaseViewController.m; sourceTree = "<group>"; };
+		680902321B02F03B00EDD4F8 /* XISMiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISMiddleViewController.h; sourceTree = "<group>"; };
+		680902331B02F03B00EDD4F8 /* XISMiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISMiddleViewController.m; sourceTree = "<group>"; };
+		680902341B02F03B00EDD4F8 /* ReadMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
+		680902381B02F03B00EDD4F8 /* XISHeaderfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISHeaderfile.h; sourceTree = "<group>"; };
+		6809023E1B02F05A00EDD4F8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Architecture/MenuViewController.swift; sourceTree = "<group>"; };
+		6809023F1B02F05A00EDD4F8 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyAccountViewController.swift; path = Architecture/MyAccountViewController.swift; sourceTree = "<group>"; };
+		680902401B02F05A00EDD4F8 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyViewController.swift; path = Architecture/MyViewController.swift; sourceTree = "<group>"; };
+		680902411B02F05A00EDD4F8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = Architecture/SettingViewController.swift; sourceTree = "<group>"; };
+		680902421B02F05A00EDD4F8 /* WinningInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WinningInformationViewController.swift; path = Architecture/WinningInformationViewController.swift; sourceTree = "<group>"; };
+		681F86021B02F375003F122D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		68A485431B033F7F0053C9A0 /* BreakHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BreakHTTP.h; path = Tool/HTTP/BreakHTTP.h; sourceTree = "<group>"; };
+		68A485441B033F7F0053C9A0 /* BreakHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BreakHTTP.m; path = Tool/HTTP/BreakHTTP.m; sourceTree = "<group>"; };
+		68A485451B033F7F0053C9A0 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPRequest.h; path = Tool/HTTP/HTTPRequest.h; sourceTree = "<group>"; };
+		68A485461B033F7F0053C9A0 /* HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPRequest.m; path = Tool/HTTP/HTTPRequest.m; sourceTree = "<group>"; };
+		68A485491B033F7F0053C9A0 /* MBOURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBOURLConnection.h; path = Tool/HTTP/MBOURLConnection.h; sourceTree = "<group>"; };
+		68A4854A1B033F7F0053C9A0 /* MBOURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBOURLConnection.m; path = Tool/HTTP/MBOURLConnection.m; sourceTree = "<group>"; };
+		68A4854B1B033F7F0053C9A0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Tool/HTTP/Reachability.h; sourceTree = "<group>"; };
+		68A4854C1B033F7F0053C9A0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Tool/HTTP/Reachability.m; sourceTree = "<group>"; };
+		68A485531B0340120053C9A0 /* MBOBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBOBaseModel.h; path = Model/MBOBaseModel.h; sourceTree = "<group>"; };
+		68A485541B0340120053C9A0 /* MBOBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBOBaseModel.m; path = Model/MBOBaseModel.m; sourceTree = "<group>"; };
+		68A485591B0341300053C9A0 /* XISBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XISBaseView.h; path = "XIS_ Architecture/Architecture/View/XISBaseView.h"; sourceTree = SOURCE_ROOT; };
+		68A4855A1B0341300053C9A0 /* XISBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XISBaseView.m; path = "XIS_ Architecture/Architecture/View/XISBaseView.m"; sourceTree = SOURCE_ROOT; };
+		68A4855C1B0341390053C9A0 /* ShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowAlertView.h; path = "XIS_ Architecture/Architecture/View/ShowAlertView.h"; sourceTree = SOURCE_ROOT; };
+		68A4855D1B0341390053C9A0 /* ShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowAlertView.m; path = "XIS_ Architecture/Architecture/View/ShowAlertView.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				680902051B02EFF600EDD4F8 /* AppDelegate.swift */,
-				6809020A1B02EFF600EDD4F8 /* ViewController.swift */,
-				6809020C1B02EFF600EDD4F8 /* Main.storyboard */,
+				680902281B02F02400EDD4F8 /* XIS_ Architecture-Bridging-Header.h */,
+				681F86021B02F375003F122D /* Main.storyboard */,
+				6809022C1B02F03B00EDD4F8 /* Architecture */,
+				681F86051B02F8FB003F122D /* Views */,
+				681F86041B02F8C4003F122D /* Controllers */,
 				6809020F1B02EFF600EDD4F8 /* Images.xcassets */,
 				680902111B02EFF600EDD4F8 /* LaunchScreen.xib */,
 				680902071B02EFF600EDD4F8 /* XIS__Architecture.xcdatamodeld */,
@@ -113,6 +158,95 @@
 				6809021D1B02EFF600EDD4F8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6809022C1B02F03B00EDD4F8 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				68A485521B033FB50053C9A0 /* Model */,
+				68A485411B033E710053C9A0 /* Tool */,
+				680902341B02F03B00EDD4F8 /* ReadMe.swift */,
+				680902381B02F03B00EDD4F8 /* XISHeaderfile.h */,
+				6809022D1B02F03B00EDD4F8 /* Controller */,
+				680902351B02F03B00EDD4F8 /* View */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		6809022D1B02F03B00EDD4F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6809022E1B02F03B00EDD4F8 /* XISAdvancedViewController.h */,
+				6809022F1B02F03B00EDD4F8 /* XISAdvancedViewController.m */,
+				680902301B02F03B00EDD4F8 /* XISBaseViewController.h */,
+				680902311B02F03B00EDD4F8 /* XISBaseViewController.m */,
+				680902321B02F03B00EDD4F8 /* XISMiddleViewController.h */,
+				680902331B02F03B00EDD4F8 /* XISMiddleViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		680902351B02F03B00EDD4F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68A4855C1B0341390053C9A0 /* ShowAlertView.h */,
+				68A4855D1B0341390053C9A0 /* ShowAlertView.m */,
+				68A485591B0341300053C9A0 /* XISBaseView.h */,
+				68A4855A1B0341300053C9A0 /* XISBaseView.m */,
+			);
+			name = View;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		681F86041B02F8C4003F122D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6809023E1B02F05A00EDD4F8 /* MenuViewController.swift */,
+				6809023F1B02F05A00EDD4F8 /* MyAccountViewController.swift */,
+				680902401B02F05A00EDD4F8 /* MyViewController.swift */,
+				680902411B02F05A00EDD4F8 /* SettingViewController.swift */,
+				680902421B02F05A00EDD4F8 /* WinningInformationViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		681F86051B02F8FB003F122D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		68A485411B033E710053C9A0 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				68A485421B033E9B0053C9A0 /* HTTP */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		68A485421B033E9B0053C9A0 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				68A485431B033F7F0053C9A0 /* BreakHTTP.h */,
+				68A485441B033F7F0053C9A0 /* BreakHTTP.m */,
+				68A485451B033F7F0053C9A0 /* HTTPRequest.h */,
+				68A485461B033F7F0053C9A0 /* HTTPRequest.m */,
+				68A485491B033F7F0053C9A0 /* MBOURLConnection.h */,
+				68A4854A1B033F7F0053C9A0 /* MBOURLConnection.m */,
+				68A4854B1B033F7F0053C9A0 /* Reachability.h */,
+				68A4854C1B033F7F0053C9A0 /* Reachability.m */,
+			);
+			name = HTTP;
+			sourceTree = "<group>";
+		};
+		68A485521B033FB50053C9A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68A485531B0340120053C9A0 /* MBOBaseModel.h */,
+				68A485541B0340120053C9A0 /* MBOBaseModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6809020E1B02EFF600EDD4F8 /* Main.storyboard in Resources */,
+				681F86031B02F375003F122D /* Main.storyboard in Resources */,
 				680902131B02EFF600EDD4F8 /* LaunchScreen.xib in Resources */,
 				680902101B02EFF600EDD4F8 /* Images.xcassets in Resources */,
 			);
@@ -215,9 +349,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6809020B1B02EFF600EDD4F8 /* ViewController.swift in Sources */,
 				680902061B02EFF600EDD4F8 /* AppDelegate.swift in Sources */,
+				680902441B02F05A00EDD4F8 /* MyAccountViewController.swift in Sources */,
+				6809023A1B02F03B00EDD4F8 /* XISBaseViewController.m in Sources */,
+				68A4855B1B0341300053C9A0 /* XISBaseView.m in Sources */,
+				68A4855E1B0341390053C9A0 /* ShowAlertView.m in Sources */,
+				680902431B02F05A00EDD4F8 /* MenuViewController.swift in Sources */,
+				68A4854E1B033F7F0053C9A0 /* HTTPRequest.m in Sources */,
 				680902091B02EFF600EDD4F8 /* XIS__Architecture.xcdatamodeld in Sources */,
+				680902471B02F05A00EDD4F8 /* WinningInformationViewController.swift in Sources */,
+				6809023B1B02F03B00EDD4F8 /* XISMiddleViewController.m in Sources */,
+				6809023C1B02F03B00EDD4F8 /* ReadMe.swift in Sources */,
+				680902391B02F03B00EDD4F8 /* XISAdvancedViewController.m in Sources */,
+				68A4854D1B033F7F0053C9A0 /* BreakHTTP.m in Sources */,
+				680902451B02F05A00EDD4F8 /* MyViewController.swift in Sources */,
+				68A485501B033F7F0053C9A0 /* MBOURLConnection.m in Sources */,
+				680902461B02F05A00EDD4F8 /* SettingViewController.swift in Sources */,
+				68A485551B0340120053C9A0 /* MBOBaseModel.m in Sources */,
+				68A485511B033F7F0053C9A0 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +389,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6809020C1B02EFF600EDD4F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6809020D1B02EFF600EDD4F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		680902111B02EFF600EDD4F8 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -344,9 +485,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "XIS_ Architecture/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XIS_ Architecture-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,9 +498,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "XIS_ Architecture/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XIS_ Architecture-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -413,6 +559,7 @@
 				680902241B02EFF600EDD4F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		680902251B02EFF600EDD4F8 /* Build configuration list for PBXNativeTarget "XIS_ ArchitectureTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +568,7 @@
 				680902271B02EFF600EDD4F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

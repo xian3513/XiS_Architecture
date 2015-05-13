@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yem-B3-EdW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="154" y="1255"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--大厅-->
         <scene sceneID="zWa-O7-DBc">
             <objects>
                 <viewController id="gBh-Da-ic1" customClass="MenuViewController" customModule="XIS__Architecture" customModuleProvider="target" sceneMemberID="viewController">
@@ -88,9 +88,45 @@
                     <view key="view" contentMode="scaleToFill" id="Vow-Nm-ZZI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7BH-7D-4vf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ox1-gL-xWf">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menuCollectionCell" id="75V-Ss-lPV">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="gBh-Da-ic1" id="20O-3X-aCu"/>
+                                    <outlet property="delegate" destination="gBh-Da-ic1" id="Ohp-Cf-NM4"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7BH-7D-4vf" secondAttribute="bottom" id="7nK-ex-DIG"/>
+                            <constraint firstItem="7BH-7D-4vf" firstAttribute="top" secondItem="Vow-Nm-ZZI" secondAttribute="top" id="Qpm-JN-SOB"/>
+                            <constraint firstItem="7BH-7D-4vf" firstAttribute="leading" secondItem="Vow-Nm-ZZI" secondAttribute="leading" id="nid-KE-bQC"/>
+                            <constraint firstAttribute="trailing" secondItem="7BH-7D-4vf" secondAttribute="trailing" id="oIo-cW-Zs8"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xfs-GO-dk2"/>
+                    <navigationItem key="navigationItem" title="大厅" id="xfs-GO-dk2"/>
+                    <connections>
+                        <outlet property="menuCollectionView" destination="7BH-7D-4vf" id="t7n-6W-7hv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2O-YC-J0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

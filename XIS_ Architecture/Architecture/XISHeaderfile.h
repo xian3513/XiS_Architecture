@@ -14,6 +14,7 @@
 
 //#import "NSString+Extension.h"
 
+#import <UIKit/UIKit.h>
 
 #if DEBUG
 #define NSLog(FORMAT, ...) fprintf(stderr,"\n[function:%s line:%d] %s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
