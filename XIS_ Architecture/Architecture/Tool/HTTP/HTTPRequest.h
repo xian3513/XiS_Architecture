@@ -20,7 +20,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MBOURLConnection.h"
-#import "MBOBaseModel.h"
+#import "XISBaseModel.h"
 #import "ShowAlertView.h"
 
 typedef void (^MBOHTTPRequestFinishDataBlock)(NSData *data, NSString *identifer);
@@ -39,14 +39,14 @@ typedef void (^MBOHTTPRequestFailBlock)(NSInteger statusCode, NSString *identife
  *通过model参数判断get还是post 默认为get
  */
 
-- (void)HTTPWithModel:(MBOBaseModel *)model Identifer:(NSString *)identifer;
+- (void)HTTPWithModel:(XISBaseModel *)model Identifer:(NSString *)identifer;
 
 /*
  *  异步请求
  */
 
-- (void)HTTPGetWithModel:(MBOBaseModel *)model Identifer:(NSString *)identifer;
-- (void)HTTPPostWithModel:(MBOBaseModel *)model Identifer:(NSString *)identifer;
+- (void)HTTPGetWithModel:(XISBaseModel *)model Identifer:(NSString *)identifer;
+- (void)HTTPPostWithModel:(XISBaseModel *)model Identifer:(NSString *)identifer;
 
 /*
  *  同步请求

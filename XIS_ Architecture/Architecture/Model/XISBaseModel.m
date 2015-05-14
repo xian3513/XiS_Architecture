@@ -1,14 +1,13 @@
 //
-//  MBOBaseModel.m
-//  duobao
+//  XISBaseModel.m
 //
 //  Created by kt on 15/3/13.
-//  Copyright (c) 2015年 Duobao. All rights reserved.
+//  Copyright (c) 2015年 . All rights reserved.
 //
 
-#import "MBOBaseModel.h"
+#import "XISBaseModel.h"
 
-@implementation MBOBaseModel {
+@implementation XISBaseModel {
    NSMutableData *receiveData;
 }
 
@@ -36,12 +35,6 @@
     NSError * error = nil;
     id json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&error];
     if([json isKindOfClass:[NSDictionary class]]) {
-#warning 需要进一步处理
-//        NSDictionary *dict = (NSDictionary *)json;
-//        if([dict.allKeys containsObject:@"servertime"]) {
-//            NSLog(@"json = dictionary.key = servertime.   identifer:%@",identifier);
-//            return nil;
-//        }
     }
     return json;
 }

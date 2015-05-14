@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XISHeaderfile.h"
+//#import "XISHeaderfile.h"
 @interface XISBaseView : UIView
 
+-(void)addTapGestureWithAction:(void(^)())action;
 @end

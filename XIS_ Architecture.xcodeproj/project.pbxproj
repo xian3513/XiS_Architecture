@@ -26,9 +26,11 @@
 		68A4854E1B033F7F0053C9A0 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A485461B033F7F0053C9A0 /* HTTPRequest.m */; };
 		68A485501B033F7F0053C9A0 /* MBOURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4854A1B033F7F0053C9A0 /* MBOURLConnection.m */; };
 		68A485511B033F7F0053C9A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4854C1B033F7F0053C9A0 /* Reachability.m */; };
-		68A485551B0340120053C9A0 /* MBOBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A485541B0340120053C9A0 /* MBOBaseModel.m */; };
+		68A485551B0340120053C9A0 /* XISBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A485541B0340120053C9A0 /* XISBaseModel.m */; };
 		68A4855B1B0341300053C9A0 /* XISBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4855A1B0341300053C9A0 /* XISBaseView.m */; };
 		68A4855E1B0341390053C9A0 /* ShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4855D1B0341390053C9A0 /* ShowAlertView.m */; };
+		68FDF1F61B044D2E0034F8C1 /* XISGlobalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDF1F31B044D2E0034F8C1 /* XISGlobalModel.m */; };
+		68FDF1F71B044D2E0034F8C1 /* XISMemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDF1F51B044D2E0034F8C1 /* XISMemoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +61,6 @@
 		680902321B02F03B00EDD4F8 /* XISMiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISMiddleViewController.h; sourceTree = "<group>"; };
 		680902331B02F03B00EDD4F8 /* XISMiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISMiddleViewController.m; sourceTree = "<group>"; };
 		680902341B02F03B00EDD4F8 /* ReadMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
-		680902381B02F03B00EDD4F8 /* XISHeaderfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISHeaderfile.h; sourceTree = "<group>"; };
 		6809023E1B02F05A00EDD4F8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Architecture/MenuViewController.swift; sourceTree = "<group>"; };
 		6809023F1B02F05A00EDD4F8 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyAccountViewController.swift; path = Architecture/MyAccountViewController.swift; sourceTree = "<group>"; };
 		680902401B02F05A00EDD4F8 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyViewController.swift; path = Architecture/MyViewController.swift; sourceTree = "<group>"; };
@@ -74,12 +75,17 @@
 		68A4854A1B033F7F0053C9A0 /* MBOURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBOURLConnection.m; path = Tool/HTTP/MBOURLConnection.m; sourceTree = "<group>"; };
 		68A4854B1B033F7F0053C9A0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Tool/HTTP/Reachability.h; sourceTree = "<group>"; };
 		68A4854C1B033F7F0053C9A0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Tool/HTTP/Reachability.m; sourceTree = "<group>"; };
-		68A485531B0340120053C9A0 /* MBOBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBOBaseModel.h; path = Model/MBOBaseModel.h; sourceTree = "<group>"; };
-		68A485541B0340120053C9A0 /* MBOBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBOBaseModel.m; path = Model/MBOBaseModel.m; sourceTree = "<group>"; };
+		68A485531B0340120053C9A0 /* XISBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XISBaseModel.h; path = Model/XISBaseModel.h; sourceTree = "<group>"; };
+		68A485541B0340120053C9A0 /* XISBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XISBaseModel.m; path = Model/XISBaseModel.m; sourceTree = "<group>"; };
 		68A485591B0341300053C9A0 /* XISBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XISBaseView.h; path = "XIS_ Architecture/Architecture/View/XISBaseView.h"; sourceTree = SOURCE_ROOT; };
 		68A4855A1B0341300053C9A0 /* XISBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XISBaseView.m; path = "XIS_ Architecture/Architecture/View/XISBaseView.m"; sourceTree = SOURCE_ROOT; };
 		68A4855C1B0341390053C9A0 /* ShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShowAlertView.h; path = "XIS_ Architecture/Architecture/View/ShowAlertView.h"; sourceTree = SOURCE_ROOT; };
 		68A4855D1B0341390053C9A0 /* ShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShowAlertView.m; path = "XIS_ Architecture/Architecture/View/ShowAlertView.m"; sourceTree = SOURCE_ROOT; };
+		68FDF1F21B044D2E0034F8C1 /* XISGlobalModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XISGlobalModel.h; path = Model/XISGlobalModel.h; sourceTree = "<group>"; };
+		68FDF1F31B044D2E0034F8C1 /* XISGlobalModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XISGlobalModel.m; path = Model/XISGlobalModel.m; sourceTree = "<group>"; };
+		68FDF1F41B044D2E0034F8C1 /* XISMemoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XISMemoModel.h; path = Model/XISMemoModel.h; sourceTree = "<group>"; };
+		68FDF1F51B044D2E0034F8C1 /* XISMemoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XISMemoModel.m; path = Model/XISMemoModel.m; sourceTree = "<group>"; };
+		68FDF1F81B0452890034F8C1 /* XISHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISHeaderFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,10 +169,10 @@
 		6809022C1B02F03B00EDD4F8 /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				68FDF1F81B0452890034F8C1 /* XISHeaderFile.h */,
+				680902341B02F03B00EDD4F8 /* ReadMe.swift */,
 				68A485521B033FB50053C9A0 /* Model */,
 				68A485411B033E710053C9A0 /* Tool */,
-				680902341B02F03B00EDD4F8 /* ReadMe.swift */,
-				680902381B02F03B00EDD4F8 /* XISHeaderfile.h */,
 				6809022D1B02F03B00EDD4F8 /* Controller */,
 				680902351B02F03B00EDD4F8 /* View */,
 			);
@@ -243,8 +249,12 @@
 		68A485521B033FB50053C9A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				68A485531B0340120053C9A0 /* MBOBaseModel.h */,
-				68A485541B0340120053C9A0 /* MBOBaseModel.m */,
+				68FDF1F21B044D2E0034F8C1 /* XISGlobalModel.h */,
+				68FDF1F31B044D2E0034F8C1 /* XISGlobalModel.m */,
+				68FDF1F41B044D2E0034F8C1 /* XISMemoModel.h */,
+				68FDF1F51B044D2E0034F8C1 /* XISMemoModel.m */,
+				68A485531B0340120053C9A0 /* XISBaseModel.h */,
+				68A485541B0340120053C9A0 /* XISBaseModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -354,18 +364,20 @@
 				6809023A1B02F03B00EDD4F8 /* XISBaseViewController.m in Sources */,
 				68A4855B1B0341300053C9A0 /* XISBaseView.m in Sources */,
 				68A4855E1B0341390053C9A0 /* ShowAlertView.m in Sources */,
+				68FDF1F71B044D2E0034F8C1 /* XISMemoModel.m in Sources */,
 				680902431B02F05A00EDD4F8 /* MenuViewController.swift in Sources */,
 				68A4854E1B033F7F0053C9A0 /* HTTPRequest.m in Sources */,
 				680902091B02EFF600EDD4F8 /* XIS__Architecture.xcdatamodeld in Sources */,
 				680902471B02F05A00EDD4F8 /* WinningInformationViewController.swift in Sources */,
 				6809023B1B02F03B00EDD4F8 /* XISMiddleViewController.m in Sources */,
 				6809023C1B02F03B00EDD4F8 /* ReadMe.swift in Sources */,
+				68FDF1F61B044D2E0034F8C1 /* XISGlobalModel.m in Sources */,
 				680902391B02F03B00EDD4F8 /* XISAdvancedViewController.m in Sources */,
 				68A4854D1B033F7F0053C9A0 /* BreakHTTP.m in Sources */,
 				680902451B02F05A00EDD4F8 /* MyViewController.swift in Sources */,
 				68A485501B033F7F0053C9A0 /* MBOURLConnection.m in Sources */,
 				680902461B02F05A00EDD4F8 /* SettingViewController.swift in Sources */,
-				68A485551B0340120053C9A0 /* MBOBaseModel.m in Sources */,
+				68A485551B0340120053C9A0 /* XISBaseModel.m in Sources */,
 				68A485511B033F7F0053C9A0 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

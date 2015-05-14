@@ -39,7 +39,15 @@ NSString * const hostname =@"http://api.mbo21.com/?";
    
 }
 
-- (void)HTTPGetWithModel:(MBOBaseModel *)model Identifer:(NSString *)identifer {
+- (void)HTTPWithModel:(XISBaseModel *)model Identifer:(NSString *)identifer {
+    if([model.HTTPTheWay isEqualToString:@"get"]) {
+        [self HTTPGetWithModel:model Identifer:identifer];
+    } else {
+        [self HTTPPostWithModel:model Identifer:identifer];
+    }
+}
+
+- (void)HTTPGetWithModel:(XISBaseModel *)model Identifer:(NSString *)identifer {
     model.identifer = identifer;
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",hostname,model.url]];
     //第二步，创建请求
@@ -55,7 +63,7 @@ NSString * const hostname =@"http://api.mbo21.com/?";
     currentURLConnection = connection;
 }
 
-- (void)HTTPPostWithModel:(MBOBaseModel *)model Identifer:(NSString *)identifer {
+- (void)HTTPPostWithModel:(XISBaseModel *)model Identifer:(NSString *)identifer {
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",hostname,model.url]];
     //第二步，创建请求

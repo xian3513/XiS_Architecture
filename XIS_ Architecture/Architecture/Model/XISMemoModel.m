@@ -6,38 +6,38 @@
 //  Copyright (c) 2015年 Duobao. All rights reserved.
 //
 
-#import "MemoModel.h"
-#import "GlobalModel.h"
-@implementation MemoModel
+#import "XISMemoModel.h"
+#import "XISGlobalModel.h"
+@implementation XISMemoModel
 
-+ (MemoModel *)share {
++ (XISMemoModel *)share {
     static dispatch_once_t predicate;
-    static MemoModel *singleton;
+    static XISMemoModel *singleton;
     dispatch_once(&predicate, ^{
-        singleton = [[MemoModel alloc] init];
+        singleton = [[XISMemoModel alloc] init];
     });
     return singleton;
 }
 
 - (id)init {
     if(self = [super init]) {
-        GlobalModel *model = [GlobalModel share];
-        [model addObserver:self forKeyPath:@"lotteryDateDataIsHave" options:
-          NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+        XISGlobalModel *model = [XISGlobalModel share];
+//        [model addObserver:self forKeyPath:@"lotteryDateDataIsHave" options:
+//          NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     }
     return self;
 }
 
 - (void)dealloc {
-    GlobalModel *model = [GlobalModel share];
-    [model removeObserver:self forKeyPath:@"lotteryDateDataIsHave" context:nil];
+    XISGlobalModel *model = [XISGlobalModel share];
+//    [model removeObserver:self forKeyPath:@"lotteryDateDataIsHave" context:nil];
 }
 
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if([keyPath isEqualToString:@"lotteryDateDataIsHave"]) {
-        NSLog(@"%@",keyPath);
-    }
+//    if([keyPath isEqualToString:@"lotteryDateDataIsHave"]) {
+//        NSLog(@"%@",keyPath);
+//    }
 }
 
 #pragma mark-NSCoding
@@ -58,7 +58,7 @@
 
 #pragma mark-NSCopying
 -(id)copyWithZone:(NSZone *)zone{
-    MemoModel *copy = [[[self class] allocWithZone:zone] init];
+    XISMemoModel *copy = [[[self class] allocWithZone:zone] init];
     copy.name = [self.name copyWithZone:zone];
     copy.age = self.age;
     copy.array = [self.array copyWithZone:zone];

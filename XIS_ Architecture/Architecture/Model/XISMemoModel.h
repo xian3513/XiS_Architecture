@@ -15,11 +15,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MemoModel : NSObject<NSCoding,NSCopying>
+@interface XISMemoModel : NSObject<NSCoding,NSCopying>
+
 //示范属性
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic) NSInteger age;
 @property (nonatomic,strong) NSArray *array;
 
-+ (MemoModel *)share;
++ (XISMemoModel *)share;
 @end

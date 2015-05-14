@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XISHeaderfile.h"
+#import "XISHeaderFile.h"
 
 @interface ShowAlertView : NSObject
 //@property (nonatomic,assign,readonly) BOOL indicatorIsAnimating;

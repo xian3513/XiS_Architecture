@@ -13,7 +13,6 @@ class MenuViewController:XISMiddleViewController,UICollectionViewDelegate,UIColl
     @IBOutlet weak var menuCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        addColectionView()
         
         //测试oc的block在swift下闭包运行
         backgroundDataProcessingWithIdentifer("dd", process: { () -> Void in
@@ -23,6 +22,21 @@ class MenuViewController:XISMiddleViewController,UICollectionViewDelegate,UIColl
                 println("finish   **  \(identifer)")
             }
         }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+         addColectionView()
+        self.XISHTTPRequest(nil, identifer:"")
+    }
+    
+    //实现父类HTTP回调方法
+    override func XISHTTPSuccessWithData(data: NSData!, identifer: String!) {
+        super.XISHTTPSuccessWithData(data, identifer: identifer)
+    }
+    
+    override func XISHTTPFailWithStatusCode(statusCode: Int, identifer: String!) {
+        super.XISHTTPFailWithStatusCode(statusCode, identifer: identifer)
     }
     
     func addColectionView() {

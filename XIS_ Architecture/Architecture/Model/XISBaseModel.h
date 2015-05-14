@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
-#import "XISHeaderfile.h"
+//#import "XISHeaderfile.h"
 
-@interface MBOBaseModel : NSObject
+@interface XISBaseModel : NSObject
 
 @property (nonatomic,copy) NSString *url;
 @property (nonatomic,copy) NSString *HTTPTheWay;

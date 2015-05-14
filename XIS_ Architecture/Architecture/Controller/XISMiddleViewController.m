@@ -7,16 +7,43 @@
 //
 
 #import "XISMiddleViewController.h"
-
+#import "HTTPRequest.h"
 @interface XISMiddleViewController ()
 
 @end
 
-@implementation XISMiddleViewController
+@implementation XISMiddleViewController {
+    HTTPRequest *httpRequest;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self httpRequestResult];
+}
+
+- (void)httpRequestResult {
+    __block XISMiddleViewController *myself = self;
+    httpRequest.httpSuccess = ^(NSData *data,NSString *identifer){
+        [myself XISHTTPSuccessWithData:data identifer:identifer];
+    };
+    
+    httpRequest.httpFail = ^(NSInteger statusCode,NSString *identifer){
+        [myself XISHTTPFailWithStatusCode:statusCode identifer:identifer];
+    };
+}
+
+- (void)XISHTTPRequest:(XISBaseModel *)model identifer:(NSString *)identifer {
+    httpRequest = [[HTTPRequest alloc]init];
+    [httpRequest HTTPWithModel:model Identifer:identifer];
+}
+
+- (void)XISHTTPSuccessWithData:(NSData *)data identifer:(NSString *)identifer {
+
+}
+
+- (void)XISHTTPFailWithStatusCode:(NSInteger)statusCode identifer:(NSString *)identifer {
+
 }
 
 - (void)didReceiveMemoryWarning {

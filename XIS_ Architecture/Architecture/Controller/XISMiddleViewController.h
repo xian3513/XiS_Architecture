@@ -7,7 +7,17 @@
 //
 
 #import "XISBaseViewController.h"
-
+#import "XISBaseModel.h"
 @interface XISMiddleViewController : XISBaseViewController
 
+/**
+ @http
+ */
+- (void)XISHTTPRequest:(XISBaseModel *)model identifer:(NSString *)identifer;
+
+/**
+ @http回调函数
+ */
+- (void)XISHTTPSuccessWithData:(NSData *)data identifer:(NSString *)identifer;
+- (void)XISHTTPFailWithStatusCode:(NSInteger )statusCode identifer:(NSString *)identifer;
 @end
