@@ -22,6 +22,7 @@ class MenuViewController:XISMiddleViewController,UICollectionViewDelegate,UIColl
                 println("finish   **  \(identifer)")
             }
         }
+        openReachability()
     }
     
     override func viewWillAppear(animated: Bool) {
