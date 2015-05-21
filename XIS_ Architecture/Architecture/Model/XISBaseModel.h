@@ -12,6 +12,9 @@
 
 @interface XISBaseModel : NSObject
 
+/**
+ *网络请求基本类型
+ */
 @property (nonatomic,copy) NSString *url;
 @property (nonatomic,copy) NSString *HTTPTheWay;
 @property (nonatomic,copy) NSString *identifer;
@@ -20,6 +23,7 @@
 @property (nonatomic,assign) BOOL hidesShowViewWhenHTTP;
 //目前model类方法用于逻辑处理
 + (id)parseJSON:(NSData *)data identifer:(NSString *)identifier;
+
 + (NSString *)parseSyntaxError:(NSData *)data identifer:(NSString *)identifier;
 + (NSString *)parsePrompt:(NSData *)data identifer:(NSString *)identifier;
 + (NSArray *)filterPropertys;

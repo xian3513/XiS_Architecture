@@ -15,19 +15,24 @@
 @implementation XISMiddleViewController {
     HTTPRequest *httpRequest;
     Reachability *XISReachability;
+    NetworkStatus XISNetworkStatus;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self httpRequestResult];
 }
 
 #pragma http
 
 - (void)XISHTTPRequest:(XISBaseModel *)model identifer:(NSString *)identifer {
-    httpRequest = [[HTTPRequest alloc]init];
-    [httpRequest HTTPWithModel:model Identifer:identifer];
+    
+    //如果开启XISreachability，在做网络请求之前就要判断当前是否有网络
+    BOOL haveNetwork = (XISReachability==nil?YES:(XISNetworkStatus != NotReachable?YES:NO));
+    if(haveNetwork) {
+        httpRequest = [[HTTPRequest alloc]init];
+        [httpRequest HTTPWithModel:model Identifer:identifer];
+    }
 }
 
 - (void)httpRequestResult {
@@ -93,16 +98,19 @@
 }
 
 - (void)XISViewControllerNotReachable {
+    XISNetworkStatus = NotReachable;
     [ShowAlertView showToastViewWithText:@"网络连接中断,请检查网络"];
     NSLog(@"网络连接中断,请检查网络");
 }
 
 - (void)XISViewControllerReachableViaWiFi {
+    XISNetworkStatus = ReachableViaWiFi;
     //  [ShowAlertView showToastViewWithText:@"当前网络状态为:WIFI"];
     NSLog(@"当前网络状态为:WIFI");
 }
 
 - (void)XISViewControllerReachableViaWWAN {
+    XISNetworkStatus = ReachableViaWWAN;
     //[ShowAlertView showToastViewWithText:@"当前网络状态为:蜂窝数据"];
     NSLog(@"当前网络状态为:蜂窝数据");
 }
