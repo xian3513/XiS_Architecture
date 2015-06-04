@@ -18,6 +18,7 @@
     toolBarheight = 44;
     defaultViewHeight = 44+44;
     statusBarAndNavBarHeight=20+44;
+    
 }
 
 - (void)backgroundDataProcessingWithIdentifer:(NSString *)identifer process:(void (^)())process finish:(void (^)(BOOL, NSString *))finish{
@@ -57,6 +58,11 @@
     //nav -> back
     color = [UIColor whiteColor];
     [self.navigationController.navigationBar setTintColor:color];
+    
+    XISArchitectureConfig *config = [XISArchitectureConfig share];
+    if(config.xisArchitectureNavBarType == XISArchitectureNavbarSystem) {
+        self.navigationController.navigationBarHidden = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

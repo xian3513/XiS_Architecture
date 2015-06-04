@@ -57,10 +57,10 @@ class MenuViewController:XISMiddleViewController,UICollectionViewDelegate,UIColl
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath)
         -> UICollectionViewCell {
             let identify:String = "menuCollectionCell"
+            
             // 获取设计的单元格，不需要再动态添加界面元素
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
                 identify, forIndexPath: indexPath) as! UICollectionViewCell
-            // 添加图片
             cell.backgroundColor = UIColor.redColor();
             return cell
     }

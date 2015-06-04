@@ -8,8 +8,10 @@
 
 #import "XISBaseView.h"
 #import <objc/runtime.h>
+
 static char xisTapGesture;
 static char xisTapGestureBlock;
+
 @implementation XISBaseView
 
 - (id)init {

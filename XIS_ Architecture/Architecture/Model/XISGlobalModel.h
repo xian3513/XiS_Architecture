@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "XISHeaderfile.h"
+#import "XISHeaderfile.h"
 @interface XISGlobalModel : NSObject  {
     @private
   

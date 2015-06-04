@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "XISHeaderfile.h"
-
+#import "XISHeaderfile.h"
+#import "XISArchitectureConfig.h"
 @interface XISBaseViewController : UIViewController{
     CGFloat toolBarheight;
     CGFloat defaultViewHeight;

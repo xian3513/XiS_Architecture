@@ -22,6 +22,7 @@
 		680902461B02F05A00EDD4F8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680902411B02F05A00EDD4F8 /* SettingViewController.swift */; };
 		680902471B02F05A00EDD4F8 /* WinningInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680902421B02F05A00EDD4F8 /* WinningInformationViewController.swift */; };
 		681F86031B02F375003F122D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 681F86021B02F375003F122D /* Main.storyboard */; };
+		687D7D281B1855F500726123 /* XISArchitectureConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 687D7D271B1855F500726123 /* XISArchitectureConfig.m */; };
 		68A4854D1B033F7F0053C9A0 /* BreakHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A485441B033F7F0053C9A0 /* BreakHTTP.m */; };
 		68A4854E1B033F7F0053C9A0 /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A485461B033F7F0053C9A0 /* HTTPRequest.m */; };
 		68A485501B033F7F0053C9A0 /* MBOURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A4854A1B033F7F0053C9A0 /* MBOURLConnection.m */; };
@@ -67,6 +68,8 @@
 		680902411B02F05A00EDD4F8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = Architecture/SettingViewController.swift; sourceTree = "<group>"; };
 		680902421B02F05A00EDD4F8 /* WinningInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WinningInformationViewController.swift; path = Architecture/WinningInformationViewController.swift; sourceTree = "<group>"; };
 		681F86021B02F375003F122D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		687D7D261B1855F500726123 /* XISArchitectureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XISArchitectureConfig.h; sourceTree = "<group>"; };
+		687D7D271B1855F500726123 /* XISArchitectureConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XISArchitectureConfig.m; sourceTree = "<group>"; };
 		68A485431B033F7F0053C9A0 /* BreakHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BreakHTTP.h; path = Tool/HTTP/BreakHTTP.h; sourceTree = "<group>"; };
 		68A485441B033F7F0053C9A0 /* BreakHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BreakHTTP.m; path = Tool/HTTP/BreakHTTP.m; sourceTree = "<group>"; };
 		68A485451B033F7F0053C9A0 /* HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPRequest.h; path = Tool/HTTP/HTTPRequest.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				68A485411B033E710053C9A0 /* Tool */,
 				6809022D1B02F03B00EDD4F8 /* Controller */,
 				680902351B02F03B00EDD4F8 /* View */,
+				687D7D261B1855F500726123 /* XISArchitectureConfig.h */,
+				687D7D271B1855F500726123 /* XISArchitectureConfig.m */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -182,12 +187,12 @@
 		6809022D1B02F03B00EDD4F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6809022E1B02F03B00EDD4F8 /* XISAdvancedViewController.h */,
-				6809022F1B02F03B00EDD4F8 /* XISAdvancedViewController.m */,
 				680902301B02F03B00EDD4F8 /* XISBaseViewController.h */,
 				680902311B02F03B00EDD4F8 /* XISBaseViewController.m */,
 				680902321B02F03B00EDD4F8 /* XISMiddleViewController.h */,
 				680902331B02F03B00EDD4F8 /* XISMiddleViewController.m */,
+				6809022E1B02F03B00EDD4F8 /* XISAdvancedViewController.h */,
+				6809022F1B02F03B00EDD4F8 /* XISAdvancedViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				680902061B02EFF600EDD4F8 /* AppDelegate.swift in Sources */,
 				680902441B02F05A00EDD4F8 /* MyAccountViewController.swift in Sources */,
 				6809023A1B02F03B00EDD4F8 /* XISBaseViewController.m in Sources */,
+				687D7D281B1855F500726123 /* XISArchitectureConfig.m in Sources */,
 				68A4855B1B0341300053C9A0 /* XISBaseView.m in Sources */,
 				68A4855E1B0341390053C9A0 /* ShowAlertView.m in Sources */,
 				68FDF1F71B044D2E0034F8C1 /* XISMemoModel.m in Sources */,
